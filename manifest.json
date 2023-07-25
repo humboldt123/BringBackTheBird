@@ -1,0 +1,23 @@
+{
+  "name": "BringBackTheBird",
+  "description": "Brings back Twitter's old logo",
+  "homepage_url": "https://github.com/humboldt123/BringBackTheBird",
+  "version": "1.0.0",
+  "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png",
+      "512": "icon512.png"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/**"
+      ],
+      "js": [
+        "script.js"
+      ]
+    }
+  ]
+}
